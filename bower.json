@@ -1,0 +1,26 @@
+{
+  "name": "nodechat",
+  "version": "0.0.1",
+  "authors": [
+    "shay <shay@markoapps.com>"
+  ],
+  "description": "chat in browser",
+  "keywords": [
+    "chat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~1.11.3",
+    "jquery.repeater": "~1.0.2",
+    "modernizr": "~2.6.2"
+  },
+  "directory": "~/public/"
+}
