@@ -1,4 +1,5 @@
-var socket = io();
+var socket = io('http://www.markoapps.com:80',{
+'path': '/chat/socket.io'});
 
 var model = {
 	name:"empty",
