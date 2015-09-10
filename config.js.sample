@@ -1,0 +1,7 @@
+var values= {
+	port:3002,
+	host:"localhost",
+	maxUsers: 100
+}
+
+exports.values = values;

@@ -4,6 +4,7 @@ var express = require('express'),
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+var config = require('./config');
 var userList = require('./moduls/user-module');
 
 app.use(express.static('public'));
@@ -42,6 +43,6 @@ io.on('connection', function(socket){
 	})
 });
 
-var server  = http.listen(process.env.PORT || 3000, function(){
+var server  = http.listen(process.env.PORT || config.values.port, function(){
 	console.log('Express Server listening  onport %s', server.address().port);
 	});
