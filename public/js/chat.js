@@ -108,4 +108,25 @@ $( document ).ready(function(){
 	$("#user-name").text(model.name);
 	$('#chat-screen').hide();
 	errorBox.hide();
+	
+	if(window.matchMedia("screen and (max-width: 480px)").matches){
+		initMobile();
+	}
+	else{
+		initDesktop();
+	}
 });
+
+
+function initMobile(){
+	$('#user-list h3')
+	.text('click to open user list');
+	
+	$('.collapse').collapse('hide');
+}
+
+function initDesktop(){
+	$('#user-list h3')
+	.attr("data-toggle", "#")
+	.text('user list');
+}
